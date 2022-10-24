@@ -1,0 +1,19 @@
+tags:
+  - name: get text  
+paths:
+  /get_text/{name}:
+get:
+  description: get text by id 
+parameters:
+  - name: idText
+    in: path
+    required: true
+    type: integer
+responses:
+    '200':
+      description: Successful response
+    '400':
+      description: Bad Request
+    '500':
+      description: Internal Server Error
+
